@@ -1,0 +1,15 @@
+<h1>Novo contato</h1>
+
+<form [formGroup]="angForm" novalidate (ngSubmit)="salvar()">
+
+    <label>Nome
+        <input type="text" formControlName="nome">
+    </label>
+
+    <label>Email
+        <input type="text" formControlName="email">
+    </label>
+
+    <input type="submit" value="Salvar">
+
+</form>
